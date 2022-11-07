@@ -1,0 +1,155 @@
+<html>
+	<head>   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Complaint Management System</title>
+  
+  
+  
+  <style>
+	input{
+		margin:20px;
+	}
+    body {
+        background: linear-gradient(to right,#eee9eb 70%,#a3c4d8 50%);
+
+      }
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  align-items: right;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+
+.card{
+  background: #d39393;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(40% - 20px);
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(112, 167, 192);
+  cursor: pointer;
+}
+
+.card-icon{
+  font-size: 28px;
+  background: #161515;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: #0c0c0c;
+  transform: scale(1.6);
+}
+
+.card p{
+  margin-top: 20px;
+  color:black;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+.contactimage img{
+  position: absolute;
+  right: 10rem;
+  bottom: 6rem;
+  width:35%;
+  
+}
+.contactimage::before{
+  content: '';
+  position: absolute;
+  top:8rem;
+  height: 25rem;
+  left: 50rem;
+  right: 2rem;
+  bottom: 25rem;
+  border: 10px;
+  width:27%;
+  background: rgb(16, 79, 99);
+}
+
+@media screen and (max-width:800px) {
+  .contact-info{
+    flex-direction:column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+    
+  </style>
+
+  </head>
+  <body>
+  
+  
+    <nav class="navbar-nav navbar-expand-sm bg-info">
+      <div class="nav-item item1" style="margin-left:1%">
+          <h2 onclick='window.open("index.html");' style="cursor:pointer">CMS Complaint System</h2>
+      </div>
+      <div class="nav-item items" >
+              <a class="nav-link" style="text-align: right;"; href="about.html"><i class="fa fa-sticky-note" aria-hidden="true"></i>ABOUT</a>
+          </div>
+      <div class="nav-item items" >
+          <a class="nav-link" style="float: right;"; href="userlogin1.html"><i class="fa fa-user" aria-hidden="true"></i> USER LOGIN</a>
+      </div>
+        <div class="nav-item items">
+          <a class="nav-link"style="float: right;"; href="userreg1.html"><i class="fa fa-book" aria-hidden="true"></i>USER REGISTRATION</a>
+      </div>
+        <div class="nav-item items">
+          <a class="nav-link" style="float: right;"; href="adminpanel.html"><i class="fa fa-unlock-alt" aria-hidden="true"></i>ADMIN</a>
+      </div>
+      <div class="nav-item items">
+              <a class="nav-link" style="float: right;"; href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>CONTACT US</a>
+          </div>
+      </nav>
+    
+        <div class="contact-info">
+            <div class="card">
+              <i class="card-icon fa fa-envelope" aria-hidden="true"></i>
+              <p style="font-size:30px"><b><a href="mailto:cmscomp548@gmail.com" style="text-decoration:none;color:black">cmscomp548@gmail.com</a></b></p>
+            </div>
+      
+            <div class="card">
+              <i class="card-icon fa fa-phone" aria-hidden="true"></i>
+              <p style="font-size:30px;"><b><a href="tel:2817 2817"></a>2817 2817</a></b></p>
+            </div>
+      
+            <div class="card">
+              <i class="card-icon fa fa-map-marker" aria-hidden="true"></i>
+              <p style="font-size:30px;"><b>Chennai,Tamilnadu</b></p>
+            </div>
+          </div>
+          <div class="contactimage">
+            <img src="images/contact.jpg" >
+          </div>
+        </body>

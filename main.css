@@ -1,0 +1,115 @@
+.nav-item{
+	padding:6px;
+}
+
+
+.item1{
+	padding-left:left 0.7px;
+}
+.item1 h2{
+	color:white;
+	font-family:Arial Black;
+}
+.items{
+	padding-left:1%;
+	margin-left: auto;
+}
+.items a{
+	color:#ffffff;
+}
+
+.items a:hover{
+	opacity:0.6;
+}
+.carousel-inner img{
+	padding-top:2%;
+	width:800px;
+	height: 395px;
+}
+
+.animation {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+  }
+  .welcome-container {
+	padding-top: 0.5em;
+	font-size:35px;
+	font-family:Comic Sans MS;
+  }
+  .welcome-container h3 {
+	white-space:nowrap;
+	overflow:hidden;
+	animation:typing 4s steps(22,end) forwards,
+			  blink 1s infinite;
+  }
+  @keyframes typing {
+	0% { width:0% }
+	100% { width:100% }
+  }
+  @keyframes blink {
+	0%,100% {
+	  border-right:2px solid transparent;
+	}
+	50% {
+	  border-right:2px solid rgb(19, 18, 18);
+	}
+  }
+  .guide{
+	  padding-top: 2%;
+  }
+.list-group-item
+{
+	padding-left:30px;
+}
+
+#butn{
+	display:inline-block;
+	text-align:center;
+	margin-left:2px;
+}
+.btn-light{
+	background-color:#c0c0c0;
+}
+.copyright{
+	background:light;
+}
+#chkfname,#chklname,#chkmail,#chkpn,#chkuser,#efname,#elname,#email,#epn,#epass
+	{
+		color:red;
+		display:none;
+		
+	}	
+	#match{
+		display:none;
+		color:green;
+	}
+	::placeholder {
+	padding:5px;
+	font-size:17px;
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ 
+	font-size:17px;
+	padding:5px;
+ color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	padding:5px;
+	font-size:17px;
+ color: red;
+}
+
+	
+	
+@media screen and (max-width: 480px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
